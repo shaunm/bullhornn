@@ -1,0 +1,60 @@
+<style>
+
+
+.main{
+      margin-top: -25px;
+}
+
+@media only screen and (max-width: 768px) {
+    html{
+      overflow-x: hidden;
+  }
+
+}
+
+
+
+.card-panel{
+
+    height: 400px;
+    width: 300px;
+
+}
+.card-panel h5{
+  margin-top: -8px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.col{
+  display: inline-block;
+  padding: 18px;
+  float: left;
+  height: 400px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+li.buttons {
+    padding-top: 12px!important;
+}
+</style>
+
+<div align="center" style="padding-top: 50px;padding-left: 20px;" class="main">
+
+      <div class="row">
+        <div class="col ">
+          <div align="center" class="card-panel " ng-show="vm.profile">
+            <h5 align="center">{{ vm.profile.username }}</h5>
+            <img class="circle" style="width:60%;" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+      
+                <p class="profile__tagline">{{ vm.profile.tagline }}</p>
+
+
+          </div>
+        </div>
+          <posts style="float:left;" posts="vm.posts"></posts>
+
+</div>
+
+
+
+  </div>

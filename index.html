@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#C8C8C8">
+    <link rel="icon" sizes="192x192" href="apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Bullhornn">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Bullhornn</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+    <!-- Compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+<script>
+  $( document ).ready(function(){$(".button-collapse").sideNav();})
+  </script>
+
+  <style>
+  nav a {
+    color: black!important;
+}
+nav {
+    color: black;
+    background-color: #FFF;
+    /*rgb(249, 249, 249);*/
+
+}
+
+@media only screen and (max-width: 768px) {
+    html{
+      overflow-x: hidden;
+  }
+
+}
+.main{
+      margin-top: -25px;
+}
+.jumbotrons {
+    width: 100%;
+    height: 800px;
+    max-height: 800px;
+    background-repeat: no-repeat;
+    background-image: url('jumb1.jpg');
+    background-size: cover;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+.forms h2{
+  font-size: -webkit-xxx-large;
+  margin-left: 40%;
+  color: white;
+  padding-top: 15%;
+}
+}
+@media only screen and (min-width: 768px) {
+.forms input{
+  margin-top: 100px;
+  display: block;
+  padding: 8px 10px;
+  width: 350px;
+  border: 1px solid #dce0e0;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #565a5c;
+  height: auto;
+}
+}
+@media only screen and (min-width: 768px) {
+form{
+margin-left: 66%;
+}
+}
+
+
+.container {
+    text-align: center;
+    margin-top: -25px;
+    color: white;
+    padding-top: 20%;
+}
+@media only screen and (max-width: 768px) {
+    .forms h2{
+    font-size: -webkit-xxx-large;
+    margin-left: 20px;
+    color: white;
+    padding-top: 15%;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+   .forms input{
+     margin-top: 100px;
+     display: block;
+     padding: 8px 10px;
+     min-width: 50vh;
+     border: 1px solid #dce0e0;
+     border-radius: 2px;
+     background-color: #fff;
+     color: #565a5c;
+	 margin-left:20px;
+     height: auto;
+     width: 90%;
+   /*  margin-left: -40vh; */
+  }
+}
+.card-panel{
+
+    height: 400px;
+    width: 300px;
+
+}
+.card-panel h5{
+  margin-top: -8px;
+font-weight: bold;
+}
+.col{
+  display: inline-block;
+  padding: 18px;
+  float: left;
+  height: 400px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+</style>
+  </head>
+  <body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><img style="border: 0;height: 60px;width: auto;padding: 5px; padding-left: 20px;" src="lg1.svg" /></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" style="padding-left: 20px; ">menu</i>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="jumbotrons">
+
+         <div class="containers">
+
+                <div class="forms">
+                    <h2>Empowering investors with a voice.</h2>
+                    <form action="http://bullhornn.com/cgi-bin/ticker.py" autocomplete="off" method="get"  target="_blank">
+
+                        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input autocomplete="off" class="form-inline location input-large input-contrast ui-autocomplete-input" id="ticker" name="ticker" placeholder="Enter a company name or ticker." type="text">
+    <input type="submit" style="visibility:hidden;position:absolute">
+
+                    </form>
+                    <script>
+
+                  $("input").keypress(function(event) {
+                      if (event.which == 13) {
+                          event.preventDefault();
+                          $("form").submit();
+                      }
+                  });</script>
+                </div>
+          </div>
+    </div>
+
+<div style="padding-top: 20px;padding-left: 20px;" class="bottom">
+
+
+      <div class="row">
+        <div class="col ">
+          <div align="center" class="card-panel ">
+            <h5 align="center">Market News</h5>
+<div><script type="text/javascript">document.write('<script type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js"><' + '/script>');</script><script type="text/javascript" src="http://feed.mikle.com/js/rssmikle.js"></script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://finance.yahoo.com/rss/headline?s=^dji,^gspc,^ixic",rssmikle_frame_width: "257",rssmikle_frame_height: "310",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#666666",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script></div>
+          </div>
+        </div>
+        <div align="center" class="col ">
+          <div class="card-panel ">
+            <h5 align="center">Market Movers</h5>
+            <span class="black-text">Some Content.</span>
+          </div>
+        </div>
+        <div align="center" class="col ">
+          <div class="card-panel ">
+            <h5 align="center">Most Searched</h5>
+            <span class="black-text">Some Content.</span>
+          </div>
+        </div>
+        <div align="center" class="col">
+          <div class="card-panel ">
+            <h5 align="center">Current Proposals</h5>
+            <span class="black-text">Some Content.</span>
+          </div>
+        </div>
+      </div>
+
+
+</div>
+
+
+
+  </div>
+  <style>@media only screen and (min-width: 768px){img.footer-logos{width:8%}}@media only screen and (max-width: 768px){img.footer-logos{width:15%}}  .site-footer{color:#888;background-color:#111;padding-bottom:2px}.site-footer a{color:#ccc}.site-footer a:focus,.site-footer a:hover{color:#fff}.site-footer .footer-logo{padding:80px 0 30px;text-align:center}.site-footer .footer-widgets{padding:80px 0;background-color:#141414}.site-footer .footer-widgets .widget-title{color:#fff;text-transform:uppercase}.site-footer .footer-bottom{text-align:center}.site-footer .footer-bottom .footer-text{padding:0 0 30px}.col-md-12,.cscontainer{padding-left:15px;padding-right:15px}.site-footer .footer-bottom .social-list ul{display:inline-block;background-color:#000}.site-footer .footer-bottom .social-list a{width:44px;height:44px;line-height:44px}.site-footer .footer-bottom .social-list a:hover{background-color:#458f2f}.site-footer .footer-bottom:first-child .footer-text,.site-footer .footer-widgets+.footer-bottom .footer-text{padding-top:30px}.cscontainer{margin-right:auto;margin-left:auto}@media (min-width:768px){.cscontainer{width:750px}}@media (min-width:992px){.cscontainer{width:970px}}@media (min-width:1200px){.cscontainer{width:1170px}}.col-md-12{position:relative;min-height:1px}@media (min-width:992px){.col-md-12{float:left;width:100%}}
+  </style>
+ <footer class="site-footer"> <div class="footer-logo"> <div class="cscontainer"> <div class="row"> <div class="col-md-12"> <a href="index.html"><img class="circle footer-logos" src="apple-touch-icon.png"></a></div></div></div></div><div class="footer-bottom"> <div class="cscontainer"> <div class="row"> <div class="col-md-12"> <div class="footer-text"> Copyright © 2015. <a href="index.html">Next Generation Therapeutics LLC. </a>. All Rights Reserved. </div></div></div><p style="margin-bottom:2px;margin-right:-10px;font-size:xx-small">* CONTENT DISCLAIMER: ALL INFORMATION PROVIDED ON NEXT GENERATION THERAPEUTICS LLC WEBSITES ARE PROVIDED FOR INFORMATION PURPOSES ONLY. INFORMATION ON OFFICIAL NEXT GENERATION THERAPEUTICS LLC WEBSITES IS SUBJECT TO CHANGE WITHOUT PRIOR NOTICE. ALTHOUGH EVERY REASONABLE EFFORT IS MADE TO PRESENT CURRENT AND ACCURATE INFORMATION, NEXT GENERATION THERAPEUTICS LLC MAKES NO GUARANTEES OF ANY KIND. IN NO EVENT SHALL NEXT GENERATION THERAPEUTICS LLC BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR INCIDENTAL DAMAGE RESULTING FROM, ARISING OUT OF OR IN CONNECTION WITH THE USE OF THE INFORMATION FROM THE SITE </p></div></div></footer>
+
+
+  <link rel="stylesheet" href="http://markitondemand.github.io/DataApis/LookupSample/resources/demo.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+  <script type="text/javascript">
+
+  	$(function() {
+
+  		$("#ticker")
+  			.focus()
+  			.autocomplete({
+  				source: function(request,response) {
+  					$.ajax({
+  						beforeSend: function(){
+  							$("span.help-inline").show();
+  							$("span.label-info").empty().hide();
+  						},
+  						url: "http://dev.markitondemand.com/api/v2/Lookup/jsonp",
+  						dataType: "jsonp",
+  						data: {
+  							input: request.term
+  						},
+  						success: function(data) {
+  							response( $.map(data, function(item) {
+  								return {
+  									label: item.Name + " (" +item.Exchange+ ")",
+  									value: item.Symbol
+  								}
+  							}));
+  							$("span.help-inline").hide();
+  						}
+  					});
+  				},
+  				minLength: 0,
+  				select: function( event, ui ) {
+  					//console.log(ui.item);
+  					$("span.label-info").html("You selected " + ui.item.label).fadeIn("fast");
+  				},
+  				open: function() {
+  					//$(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+  				},
+  				close: function() {
+  					//$(this).removeClass("ui-corner-top").addClass("ui-corner-all");
+  				}
+  			})
+  		;
+  	});
+
+  </script>
+
+  </body>
+</html>

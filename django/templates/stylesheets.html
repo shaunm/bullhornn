@@ -1,0 +1,24 @@
+  <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#C8C8C8">
+    <link rel="icon" sizes="192x192" href="apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Bullhornn">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Bullhornn</title>
+
+
+{% load compress %}
+{% load staticfiles %}
+
+{% compress css %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/ngDialog/css/ngDialog.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/ngDialog/css/ngDialog-theme-default.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'lib/snackbarjs/snackbar.min.css' %}" />
+
+<link rel="stylesheet"  type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+<link  type="text/css"  href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="http://markitondemand.github.io/DataApis/LookupSample/resources/demo.css">
+{% endcompress %}
+<script type="text/javascript">var submitted=false;</script>

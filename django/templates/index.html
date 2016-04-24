@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="thinkster">
+<head>
+  <title>thinkster-django-angular-boilerplate</title>
+
+  <base href="/" />
+
+  {% include 'stylesheets.html' %}
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 ng-view"></div>
+    </div>
+  </div>
+{% if user.is_authenticated %}
+<div class="fixed-action-btn " style="bottom: 45px; right: 24px;">
+
+<a align="left" href="javascript:void(0)" ng-dialog="/static/templates/posts/new-post.html"  ng-dialog-controller="NewPostController as vm"  style="bottom: 45px; right: 24px;"  class="btn-floating btn-large "><i class="material-icons">add</i></a>
+
+</div>
+
+<style>@media only screen and (min-width: 768px){img.footer-logos{width:8%}}@media only screen and (max-width: 768px){img.footer-logos{width:15%}}  .site-footer{color:#888;background-color:#111;padding-bottom:2px}.site-footer a{color:#ccc}.site-footer a:focus,.site-footer a:hover{color:#fff}.site-footer .footer-logo{padding:80px 0 30px;text-align:center}.site-footer .footer-widgets{padding:80px 0;background-color:#141414}.site-footer .footer-widgets .widget-title{color:#fff;text-transform:uppercase}.site-footer .footer-bottom{text-align:center}.site-footer .footer-bottom .footer-text{padding:0 0 30px}.col-md-12,.cscontainer{padding-left:15px;padding-right:15px}.site-footer .footer-bottom .social-list ul{display:inline-block;background-color:#000}.site-footer .footer-bottom .social-list a{width:44px;height:44px;line-height:44px}.site-footer .footer-bottom .social-list a:hover{background-color:#458f2f}.site-footer .footer-bottom:first-child .footer-text,.site-footer .footer-widgets+.footer-bottom .footer-text{padding-top:30px}.cscontainer{margin-right:auto;margin-left:auto}@media (min-width:768px){.cscontainer{width:750px}}@media (min-width:992px){.cscontainer{width:970px}}@media (min-width:1200px){.cscontainer{width:1170px}}.col-md-12{position:relative;min-height:1px}@media (min-width:992px){.col-md-12{float:left;width:100%}}
+</style>
+<footer class="site-footer"> <div class="footer-logo"> <div class="cscontainer"> <div class="row"> <div class="col-md-12"> <a href="index.html"><img class="circle footer-logos" src="//bullhornn.com/apple-touch-icon.png"></a></div></div></div></div><div class="footer-bottom"> <div class="cscontainer"> <div class="row"> <div class="col-md-12"> <div class="footer-text"> Copyright © 2015. <a href="index.html">Next Generation Therapeutics LLC. </a>. All Rights Reserved. </div></div></div><p style="margin-bottom:2px;margin-right:-10px;font-size:xx-small">* CONTENT DISCLAIMER: ALL INFORMATION PROVIDED ON NEXT GENERATION THERAPEUTICS LLC WEBSITES ARE PROVIDED FOR INFORMATION PURPOSES ONLY. INFORMATION ON OFFICIAL NEXT GENERATION THERAPEUTICS LLC WEBSITES IS SUBJECT TO CHANGE WITHOUT PRIOR NOTICE. ALTHOUGH EVERY REASONABLE EFFORT IS MADE TO PRESENT CURRENT AND ACCURATE INFORMATION, NEXT GENERATION THERAPEUTICS LLC MAKES NO GUARANTEES OF ANY KIND. IN NO EVENT SHALL NEXT GENERATION THERAPEUTICS LLC BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR INCIDENTAL DAMAGE RESULTING FROM, ARISING OUT OF OR IN CONNECTION WITH THE USE OF THE INFORMATION FROM THE SITE </p></div></div></footer>
+{% else %}
+<style>@media only screen and (min-width: 768px){img.footer-logos{width:8%}}@media only screen and (max-width: 768px){img.footer-logos{width:15%}}  .site-footer{color:#888;background-color:#111;padding-bottom:2px}.site-footer a{color:#ccc}.site-footer a:focus,.site-footer a:hover{color:#fff}.site-footer .footer-logo{padding:80px 0 30px;text-align:center}.site-footer .footer-widgets{padding:80px 0;background-color:#141414}.site-footer .footer-widgets .widget-title{color:#fff;text-transform:uppercase}.site-footer .footer-bottom{text-align:center}.site-footer .footer-bottom .footer-text{padding:0 0 30px}.col-md-12,.cscontainer{padding-left:15px;padding-right:15px}.site-footer .footer-bottom .social-list ul{display:inline-block;background-color:#000}.site-footer .footer-bottom .social-list a{width:44px;height:44px;line-height:44px}.site-footer .footer-bottom .social-list a:hover{background-color:#458f2f}.site-footer .footer-bottom:first-child .footer-text,.site-footer .footer-widgets+.footer-bottom .footer-text{padding-top:30px}.cscontainer{margin-right:auto;margin-left:auto}@media (min-width:768px){.cscontainer{width:750px}}@media (min-width:992px){.cscontainer{width:970px}}@media (min-width:1200px){.cscontainer{width:1170px}}.col-md-12{position:relative;min-height:1px}@media (min-width:992px){.col-md-12{float:left;width:100%}}
+</style>
+<footer class="site-footer"> <div class="footer-logo"> <div class="cscontainer"> <div class="row"> <div class="col-md-12"> <a href="index.html"><img class="circle footer-logos" src="//bullhornn.com/apple-touch-icon.png"></a></div></div></div></div><div class="footer-bottom"> <div class="cscontainer"> <div class="row"> <div class="col-md-12"> <div class="footer-text"> Copyright © 2015. <a href="index.html">Next Generation Therapeutics LLC. </a>. All Rights Reserved. </div></div></div><p style="margin-bottom:2px;margin-right:-10px;font-size:xx-small">* CONTENT DISCLAIMER: ALL INFORMATION PROVIDED ON NEXT GENERATION THERAPEUTICS LLC WEBSITES ARE PROVIDED FOR INFORMATION PURPOSES ONLY. INFORMATION ON OFFICIAL NEXT GENERATION THERAPEUTICS LLC WEBSITES IS SUBJECT TO CHANGE WITHOUT PRIOR NOTICE. ALTHOUGH EVERY REASONABLE EFFORT IS MADE TO PRESENT CURRENT AND ACCURATE INFORMATION, NEXT GENERATION THERAPEUTICS LLC MAKES NO GUARANTEES OF ANY KIND. IN NO EVENT SHALL NEXT GENERATION THERAPEUTICS LLC BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR INCIDENTAL DAMAGE RESULTING FROM, ARISING OUT OF OR IN CONNECTION WITH THE USE OF THE INFORMATION FROM THE SITE </p></div></div></footer>
+{% endif %}
+  {% include 'javascripts.html' %}
+</body>
+</html>

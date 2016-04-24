@@ -1,0 +1,118 @@
+<style>
+
+
+.main{
+      margin-top: -25px;
+}
+
+@media only screen and (max-width: 768px) {
+    html{
+      overflow-x: hidden;
+  }
+
+}
+
+
+
+.card-panel{
+
+    height: 400px;
+    width: 300px;
+
+}
+.card-panel h5{
+  margin-top: -8px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.col{
+  display: inline-block;
+  padding: 18px;
+  float: left;
+  height: 400px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+li.buttons {
+    padding-top: 12px!important;
+}
+</style>
+
+<div align="center" style="padding-top: 50px;padding-left: 20px;" class="main">
+
+      <div class="row">
+        <div class="col ">
+          <div align="center" class="card-panel " ng-show="vm.profile">
+            <h5 align="center">Info</h5>
+            <img class="circle" style="width:60%;" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <h5 style="font-weight:normal!important;padding-top:10px;" align="center">{{ vm.profile.username }}</h5>
+                <p class="profile__tagline">{{ vm.profile.tagline }}</p>
+            <br />
+
+            <ul>
+              <br />
+                      <li><a  href="/+{{ user.username }}/settings"Edit Profile</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div align="center" class="col ">
+          <div class="card-panel ">
+            <h5 align="center">My Holdings</h5>
+            <span class="black-text">No Verifications Yet.</span>
+            <br /><br />
+            <a class="waves-effect waves-light btn">Add One</a>
+          </div>
+        </div>
+        <div align="center" class="col ">
+          <div class="card-panel ">
+            <h5 align="center">Companies of Interest</h5>
+            <span class="black-text">Nothing to show you here..</span>
+          </div>
+        </div>
+        <div align="center" class="col">
+          <div class="card-panel ">
+            <h5 align="center">Alerts & Messages</h5>
+            <span class="black-text">Nothing to show you here..</span>
+          </div>
+        </div>
+        <div align="center" class="col ">
+          <div class="card-panel ">
+            <h5 align="center">Overlap</h5>
+            <span class="black-text">Nothing to show you here..</span>
+          </div>
+        </div>
+        <div align="center" class="col ">
+          <div class="card-panel ">
+            <h5 align="center">Proposals</h5>
+            <span class="black-text">Nothing to show you here..</span>
+          </div>
+        </div>
+        <div align="center" class="col">
+          <div class="card-panel ">
+            <h5 align="center">Forums</h5>
+            <ul>
+              <li class="buttons"><a class="waves-effect waves-light btn">Value</a></li>
+              <li class="buttons"><a class="waves-effect waves-light btn">Grow</a></li>
+              <li class="buttons"><a class="waves-effect waves-light btn">Hedge</a></li>
+              <li class="buttons"><a class="waves-effect waves-light btn">Event Driven</a></li>
+              <li class="buttons"><a class="waves-effect waves-light btn">Risk-Arbs</a></li>
+
+            </ul>
+
+          </div>
+        </div>
+        <div align="center" class="col">
+          <div class="card-panel ">
+            <h5 align="center">Discussions</h5>
+            <span class="black-text">Nothing to show you here..</span>
+          </div>
+        </div>
+      </div>
+
+
+</div>
+
+
+
+  </div>

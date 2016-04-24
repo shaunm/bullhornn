@@ -1,0 +1,171 @@
+  <style>
+  nav a {
+    color: black!important;
+}
+nav {
+    color: black;
+    background-color: #FFF;
+    /*rgb(249, 249, 249);*/
+
+}
+
+@media only screen and (max-width: 768px) {
+    html{
+      overflow-x: hidden;
+  }
+
+}
+.main{
+      margin-top: -25px;
+}
+.jumbotrons {
+    width: 100%;
+    height: 800px;
+    max-height: 800px;
+    background-repeat: no-repeat;
+    background-image: url('//bullhornn.com/jumb1.jpg');
+    background-size: cover;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+.forms h2{
+  font-size: -webkit-xxx-large;
+  margin-left: 40%;
+  color: white;
+  padding-top: 15%;
+}
+}
+@media only screen and (min-width: 768px) {
+.forms input{
+  margin-top: 100px;
+  display: block;
+  padding: 8px 10px;
+  width: 350px;
+  border: 1px solid #dce0e0;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #565a5c;
+  height: auto;
+}
+}
+@media only screen and (min-width: 768px) {
+form{
+margin-left: 66%;
+}
+}
+
+
+.container {
+    text-align: center;
+    margin-top: -25px;
+    color: white;
+    padding-top: 20%;
+}
+@media only screen and (max-width: 768px) {
+    .forms h2{
+    font-size: -webkit-xxx-large;
+    margin-left: 20px;
+    color: white;
+    padding-top: 15%;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+   .forms input{
+     margin-top: 100px;
+     display: block;
+     padding: 8px 10px;
+     min-width: 50vh;
+     border: 1px solid #dce0e0;
+     border-radius: 2px;
+     background-color: #fff;
+     color: #565a5c;
+	 margin-left:20px;
+     height: auto;
+     width: 90%;
+   /*  margin-left: -40vh; */
+  }
+}
+.card-panel{
+
+    height: 400px;
+    width: 300px;
+
+}
+.card-panel h5{
+  margin-top: -8px;
+font-weight: bold;
+}
+.col{
+  display: inline-block;
+  padding: 18px;
+  float: left;
+  height: 400px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+</style>
+<div class="main" onload="authme();">
+  <div class="jumbotrons">
+
+       <div class="containers">
+
+              <div class="forms">
+                  <h2>Empowering investors with a voice.</h2>
+                  <form action="/ticker.py" autocomplete="off" method="get" target="_blank">
+
+                      <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input autocomplete="off" class="form-inline location input-large input-contrast ui-autocomplete-input" id="ticker" name="ticker" placeholder="Enter a company name or ticker." type="text">
+  <input type="submit" style="visibility:hidden;position:absolute">
+
+                  </form>
+                  <script>
+
+                $("input").keypress(function(event) {
+                    if (event.which == 13) {
+                        event.preventDefault();
+                        $("form").submit();
+                    }
+                });</script>
+              </div>
+        </div>
+  </div>
+
+<div style="padding-top: 20px;padding-left: 20px;" class="bottom">
+
+
+    <div class="row">
+      <div class="col ">
+        <div align="center" class="card-panel ">
+          <h5 align="center">Market News</h5>
+          <iframe height="310" width="257" src="http://feed.mikle.com/widget/?rssmikle_url=http%3A%2F%2Ffinance.yahoo.com%2Frss%2Fheadline%3Fs%3D%5Edji%2C%5Egspc%2C%5Eixic&amp;rssmikle_frame_width=257&amp;rssmikle_frame_height=310&amp;rssmikle_target=_blank&amp;rssmikle_font=Arial%2C%20Helvetica%2C%20sans-serif&amp;rssmikle_font_size=12&amp;rssmikle_border=off&amp;responsive=off&amp;text_align=left&amp;text_align2=left&amp;corner=off&amp;scrollbar=on&amp;autoscroll=off&amp;scrolldirection=up&amp;scrollstep=3&amp;mcspeed=20&amp;sort=New&amp;rssmikle_title=off&amp;rssmikle_title_bgcolor=%230066FF&amp;rssmikle_title_color=%23FFFFFF&amp;rssmikle_item_bgcolor=%23FFFFFF&amp;rssmikle_item_title_length=55&amp;rssmikle_item_title_color=%23666666&amp;rssmikle_item_border_bottom=on&amp;rssmikle_item_description=on&amp;item_link=off&amp;rssmikle_item_description_length=150&amp;rssmikle_item_description_color=%23666666&amp;rssmikle_item_date=gl1&amp;rssmikle_timezone=Etc%2FGMT&amp;datetime_format=%25b%20%25e%2C%20%25Y%20%25l%3A%25M%3A%25S%20%25p&amp;item_description_style=text&amp;item_thumbnail=full&amp;article_num=15&amp;rssmikle_item_podcast=off&amp;" scrolling="no" name="rssmikle_frame" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0"></iframe>
+        </div>
+      </div>
+      <div align="center" class="col ">
+        <div class="card-panel ">
+          <h5 align="center">Market Movers</h5>
+          <span class="black-text">Some Content.</span>
+        </div>
+      </div>
+      <div align="center" class="col ">
+        <div class="card-panel ">
+          <h5 align="center">Most Searched</h5>
+          <span class="black-text">Some Content.</span>
+        </div>
+      </div>
+      <div align="center" class="col">
+        <div class="card-panel ">
+          <h5 align="center">Current Proposals</h5>
+          <span class="black-text">Some Content.</span>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
+
+
+</div>

@@ -1,0 +1,37 @@
+
+<div class="mains" style="margin-left: 20px;">
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <h1>Register</h1>
+
+    <div class="wells">
+      <form role="form" ng-submit="vm.register()">
+        <div class="form-group">
+          <label for="register__email">Email</label>
+          <input type="email" class="form-control" id="register__email" ng-model="vm.email" placeholder="ex. john@notgoogle.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="register__username">Username</label>
+          <input type="text" class="form-control" id="register__username" ng-model="vm.username" placeholder="ex. john" />
+        </div>
+
+        <div class="form-group">
+          <label for="register__password">Password</label>
+          <input type="password" class="form-control" id="register__password" ng-model="vm.password" placeholder="ex. thisisnotgoogleplus" />
+        </div>
+        <div>
+            <div>
+                <label>By checking this box, I agree to submit my information to this website. I agree that filling out these fields acts as a signature agreeing to the
+                <a href="terms" target="_blank">Terms of Service</a> and <a href="http://mh.maher1.com/privacy" target="_blank">Privacy Policy</a> linked from
+                this page.</label>    <p><input type="checkbox" class="filled-in" id="customer_agreement" name="customer_agreement" value="1" checked="checked" /><label for="customer_agreement">I Agree</label></p>
+             </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>

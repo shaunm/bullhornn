@@ -1,0 +1,52 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script  type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+
+<script>
+  $( document ).ready(function(){$(".button-collapse").sideNav();})
+  </script>
+
+  <style>
+  nav a {
+    color: black!important;
+}
+nav a:hover {
+    text-decoration: none;
+}
+nav {
+    color: black;
+    background-color: #FFF;
+    /*rgb(249, 249, 249);*/
+
+}
+</style>
+
+  <nav role="navigation" ng-controller="NavbarController as vm">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo"><img style="border: 0;height: 60px;width: auto;padding: 5px; padding-left: 20px;" src="//bullhornn.com/lg1.svg" /></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" style="padding-left: 20px; data-toggle="collapse" data-target="#not-google-plus-nav"">menu</i>
+      <ul class="right hide-on-med-and-down">
+        {% if user.is_authenticated %}
+        <li><a  href="/+{{ user.username }}/account">My Account</a></li>
+
+        <li><a  href="javascript:void(0)" ng-click="vm.logout()">Logout</a></li>
+        <li><a href="help.html">Help</a></li>
+        {% else %}
+        <li><a href="/login">Log In</a></li>
+        <li><a href="/register">Sign Up</a></li>
+        <li><a href="/help.html">Help</a></li>
+        {% endif %}
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        {% if user.is_authenticated %}
+        <li><a  href="/+{{ user.username }}/account">My Account</a></li>
+        <li><a  href="javascript:void(0)" ng-click="vm.logout()">Logout</a></li>
+        <li><a href="help.html">Help</a></li>
+        {% else %}
+        <li><a href="/login">Log In</a></li>
+        <li><a href="/register">Sign Up</a></li>
+        <li><a href="/help.html">Help</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>

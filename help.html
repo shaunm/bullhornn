@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#C8C8C8">
+    <link rel="icon" sizes="192x192" href="apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Bullhornn">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Bullhornn</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+    <!-- Compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+<script>
+  $( document ).ready(function(){$(".button-collapse").sideNav();})
+  </script>
+
+  <style>
+  nav a {
+    color: black!important;
+}
+nav {
+    color: black;
+    background-color: #FFF;
+    /*rgb(249, 249, 249);*/
+
+}
+
+@media only screen and (max-width: 768px) {
+    html{
+      overflow-x: hidden;
+  }
+
+}
+
+.card-panel{
+
+    height: 400px;
+    width: 300px;
+
+}
+.card-panel h5{
+  margin-top: -8px;
+font-weight: bold;
+}
+.col{
+  display: inline-block;
+  padding: 18px;
+  float: left;
+  height: 400px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+</style>
+  </head>
+
+  <nav role="navigation" ng-controller="NavbarController as vm">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo"><img style="border: 0;height: 60px;width: auto;padding: 5px; padding-left: 20px;" src="//bullhornn.com/lg1.svg" /></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" style="padding-left: 20px; data-toggle="collapse" data-target="#not-google-plus-nav"">menu</i>
+      <ul class="right hide-on-med-and-down">
+        
+        <li><a href="/login">Log In</a></li>
+        <li><a href="/register">Sign Up</a></li>
+        <li><a href="/help">Help</a></li>
+        
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        
+        <li><a href="/login">Log In</a></li>
+        <li><a href="/register">Sign Up</a></li>
+        <li><a href="/help">Help</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 ng-view"></div>
+	          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='conf.html';}"></iframe>
+	  <form style="padding-top:20px; padding-bottom:40px; width:80%; text-align:left;padding-left:20%;" align="center" method="post" target="_self" action="https://docs.google.com/forms/d/1t3BTSrUkvtuxZpoetiqcY-cQFyGqRQXBZe28pYBF820/formResponse">
+
+				<input id="entry_2005620554"  type="text" class="validate" name="entry.2005620554" />
+				<label for="Name">Name:</label>
+	
+				<input  id="entry_1045781291" type="text" class="validate"  name="entry.1045781291" />	
+				<label for="Email">Email:</label>
+
+				<textarea   id="entry_839337160" name="entry.839337160" class="validate" rows="20" cols="20"></textarea>				
+				<label for="Message">Message:</label><br />
+
+
+				<button type="submit" id="ss-submit" value="Submit" class="submit-button"> Submit </button>
+			</form>
+    </div>
+  </div>
+
+<style>@media only screen and (min-width: 768px){img.footer-logos{width:8%}}@media only screen and (max-width: 768px){img.footer-logos{width:15%}}  .site-footer{color:#888;background-color:#111;padding-bottom:2px}.site-footer a{color:#ccc}.site-footer a:focus,.site-footer a:hover{color:#fff}.site-footer .footer-logo{padding:80px 0 30px;text-align:center}.site-footer .footer-widgets{padding:80px 0;background-color:#141414}.site-footer .footer-widgets .widget-title{color:#fff;text-transform:uppercase}.site-footer .footer-bottom{text-align:center}.site-footer .footer-bottom .footer-text{padding:0 0 30px}.col-md-12,.cscontainer{padding-left:15px;padding-right:15px}.site-footer .footer-bottom .social-list ul{display:inline-block;background-color:#000}.site-footer .footer-bottom .social-list a{width:44px;height:44px;line-height:44px}.site-footer .footer-bottom .social-list a:hover{background-color:#458f2f}.site-footer .footer-bottom:first-child .footer-text,.site-footer .footer-widgets+.footer-bottom .footer-text{padding-top:30px}.cscontainer{margin-right:auto;margin-left:auto}@media (min-width:768px){.cscontainer{width:750px}}@media (min-width:992px){.cscontainer{width:970px}}@media (min-width:1200px){.cscontainer{width:1170px}}.col-md-12{position:relative;min-height:1px}@media (min-width:992px){.col-md-12{float:left;width:100%}}
+</style>
+<footer class="site-footer"> <div class="footer-logo"> <div class="cscontainer"> <div class="row"> <div class="col-md-12"> <a href="index.html"><img class="circle footer-logos" src="//bullhornn.com/apple-touch-icon.png"></a></div></div></div></div><div class="footer-bottom"> <div class="cscontainer"> <div class="row"> <div class="col-md-12"> <div class="footer-text"> Copyright © 2015. <a href="index.html">Next Generation Therapeutics LLC. </a>. All Rights Reserved. </div></div></div><p style="margin-bottom:2px;margin-right:-10px;font-size:xx-small">* CONTENT DISCLAIMER: ALL INFORMATION PROVIDED ON NEXT GENERATION THERAPEUTICS LLC WEBSITES ARE PROVIDED FOR INFORMATION PURPOSES ONLY. INFORMATION ON OFFICIAL NEXT GENERATION THERAPEUTICS LLC WEBSITES IS SUBJECT TO CHANGE WITHOUT PRIOR NOTICE. ALTHOUGH EVERY REASONABLE EFFORT IS MADE TO PRESENT CURRENT AND ACCURATE INFORMATION, NEXT GENERATION THERAPEUTICS LLC MAKES NO GUARANTEES OF ANY KIND. IN NO EVENT SHALL NEXT GENERATION THERAPEUTICS LLC BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR INCIDENTAL DAMAGE RESULTING FROM, ARISING OUT OF OR IN CONNECTION WITH THE USE OF THE INFORMATION FROM THE SITE </p></div></div></footer>
+
+
+
+
+
+</body>
+</html>

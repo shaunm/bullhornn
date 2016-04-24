@@ -1,0 +1,88 @@
+<style>
+
+
+.main{
+    margin-top: -25px;
+}
+.jumbotrons {
+  width: 100%;
+  height: 800px;
+  max-height: 800px;
+  background-repeat: no-repeat;
+  background-image: url('//bullhornn.com/jumb1.jpg');
+  background-size: cover;
+  margin-top: 27px;
+
+}
+@media only screen and (max-width: 768px) {
+  html{
+    overflow-x: hidden;
+}
+
+}
+
+.container {
+  text-align: center;
+  margin-top: -25px;
+  color: white;
+  padding-top: 20%;
+}
+@media only screen and (max-width: 768px) {
+.card-panel{
+
+    width: 100%;
+
+}
+
+}
+@media only screen and (min-width: 768px) {
+.card-panel{
+
+    width: 30%;
+
+}
+
+}
+.card-panel h5{
+margin-top: -8px;
+font-weight: bold;
+}
+
+</style>
+
+<div class="main">
+  <div class="jumbotrons">
+
+       <div class="containers">
+
+         <div align="center" class="box" style="padding-top: 100px;">
+                         <div class="card-panel ">
+                           <h5 align="center">Sign In</h5>
+
+                                      <form role="form" ng-submit="vm.login()">
+                                        <div class="alert alert-danger" ng-show="error" ng-bind="error"></div>
+
+                                        <div class="row">
+                                                 <div class="input-field col s12">
+                                                   <input class="form-control validate" id="login__email" ng-model="vm.email" type="text">
+                                                   <label for="login__email">Email</label>
+                                                 </div>
+                                                 </div>
+                                                 <div class="row">
+                                                 <div class="input-field col s12">
+                                                   <input class="form-control validate" id="login__password" type="password" ng-model="vm.password">
+                                                   <label for="login__password">Password</label>
+
+                                               </div>
+                                             </div>
+                                             <div class="form-group">
+                                               <button type="submit" class="btn btn-primary">Submit</button>
+                                             </div>
+                                      </form>
+
+                       </div>
+                   </div>
+  </div>
+
+
+</div>
